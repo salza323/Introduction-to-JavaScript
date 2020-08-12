@@ -1,25 +1,43 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
+let votingAge = 18;
+   if (votingAge > 18){
+    console.log(true);
+   }
 
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+let conditional = "name1";
+let conditional2 = 'name2';
 
+if (conditional2 == 'name2'){
+    conditional = "Hello";
+}
+
+
+console.log(conditional);
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
+const num = '1999';
+Number('1999');
+console.log(num);
 
 
 
 
 //Task d: Write a function to multiply a*b 
 
-
+function multiply(num1, num2){
+return num1 * num2;
+}
+console.log(multiply(6,2))
 
 
 
@@ -29,6 +47,11 @@
 
 
 
+
+function doggyYears(humanYears){
+    return humanYears * 7;
+}
+console.log(doggyYears(30));
 
 
 /************************************************************** Task 3 **************************************************************/
@@ -49,7 +72,31 @@
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+function dogFeeder(weight, age){
+    if(weight <= 5 && age > 1){
+    return weight * .05;
+    }
+    else if(weight <= 10 && age >= 1){
+        return weight * .04;
+    }
+    else if(weight <= 15 && age >= 1){
+        return weight * .03;
+    }
+    else if(weight > 15 && age >= 1){
+        return weight * .02;
+    }
+    else if(age >= .17 && age <= .33){
+        return weight * .1;
+    }
+    else if(age >= .34 && age <= .58){
+        return weight * .05;
+    }
+    else if(age >=.59 && age <= .99){
+        return weight * .04;
+    }
+}
 
+console.log(dogFeeder(15,1));
 
 
 
@@ -60,20 +107,46 @@
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
-  
+
+
+
+function rPC (userChoice){
+
+let compChoice= math.random();
+
+if (compChoice < .33){
+    compChoice = 'rock';
+}
+else if(compChoice > .339 && compChoice < .66){
+    compChoice = 'paper';
+}
+else if(compChoice > .66){
+    compChoice = 'scissors;'
+}
+
+if (compChoice =)
+
+}
+
+
+
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
-
+function miles (kilometers){
+    return kilometers * .621371;
+}
+console.log(miles(1));
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+function cm (feet){
+    return feet * 30.48;
+}
+console.log(cm(1));
 
 
 
@@ -82,9 +155,12 @@
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+ function annoyingSong (num){
 
+ for(let i = num; i > 0; i--)
+    console.log()
 
-
+}
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
@@ -94,8 +170,30 @@
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
 
+function grade (num){
+
+let grade = num;
+
+    if(grade > 90){
+        console.log("A");
+    }
+    else if(grade > 80){
+        console.log("B");
+    }
+    else if(grade > 70){
+        console.log("Cs");
+    }
+    else if(grade >60){
+        console.log("D");
+    }
+    else{
+        console.log("F");
+    }
+
+}
+
+console.log(grade(83))
   
   
 
