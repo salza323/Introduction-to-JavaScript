@@ -1,17 +1,24 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-let votingAge = 'true';
-   if ('voting age' > 18){
+let votingAge = 18;
+   if (votingAge > 18){
+    console.log(true);
    }
-console.log(votingAge);
+
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
 let conditional = "name1";
-conditional = 'name2';
+let conditional2 = 'name2';
+
+if (conditional2 == 'name2'){
+    conditional = "Hello";
+}
+
+
 console.log(conditional);
 
 
@@ -101,20 +108,23 @@ console.log(dogFeeder(15,1));
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
 
+
+
+function rPC (userChoice){
+
 let compChoice= math.random();
 
 if (compChoice < .33){
-    return 'rock';
+    compChoice = 'rock';
 }
 else if(compChoice > .339 && compChoice < .66){
-    return 'paper';
+    compChoice = 'paper';
 }
 else if(compChoice > .66){
-    return 'scissors;'
+    compChoice = 'scissors;'
 }
 
-
-function rPC (compChoice, userChoice){
+if (compChoice =)
 
 }
 
@@ -145,8 +155,12 @@ console.log(cm(1));
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+ function annoyingSong (num){
 
+ for(let i = num; i > 0; i--)
+    console.log()
 
+}
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
@@ -157,7 +171,9 @@ console.log(cm(1));
 //60s should be D 
 //and anything below 60 should be F
 
-let grade = "72";
+function grade (num){
+
+let grade = num;
 
     if(grade > 90){
         console.log("A");
@@ -175,7 +191,9 @@ let grade = "72";
         console.log("F");
     }
 
+}
 
+console.log(grade(83))
   
   
 
