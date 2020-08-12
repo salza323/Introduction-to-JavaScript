@@ -110,9 +110,9 @@ console.log(dogFeeder(15,1));
 
 
 
-function rPC (userChoice){
+function rPS (userChoice){
 
-let compChoice= math.random();
+let compChoice= Math.random();
 
 if (compChoice < .33){
     compChoice = 'rock';
@@ -121,12 +121,23 @@ else if(compChoice > .339 && compChoice < .66){
     compChoice = 'paper';
 }
 else if(compChoice > .66){
-    compChoice = 'scissors;'
+    compChoice = 'scissors';
 }
 
-if (compChoice =)
-
+if (compChoice == 'rock' && userChoice == 'paper'){
+    console.log("You Win");
 }
+else if (compChoice == 'paper' && userChoice == 'scissors'){
+    console.log("You Win");
+}
+else if (compChoice == 'scissors' && userChoice == 'rock'){
+    console.log("You Win");
+}
+else;
+console.log("You Lose")
+}
+
+console.log(rPS('rock'));
 
 
 
@@ -158,9 +169,10 @@ console.log(cm(1));
  function annoyingSong (num){
 
  for(let i = num; i > 0; i--)
-    console.log()
-
+    console.log((num) + ' bottles of soda on the wall, ' +  (num)  + ' bottles of soda, take one down pass it around ' +  (num - 1)  + ' bottles of soda on the wall');
 }
+
+console.log(annoyingSong(99));
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
