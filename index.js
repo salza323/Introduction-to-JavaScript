@@ -101,7 +101,22 @@ console.log(dogFeeder(15,1));
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
 
+let compChoice= math.random();
 
+if (compChoice < .33){
+    return 'rock';
+}
+else if(compChoice > .339 && compChoice < .66){
+    return 'paper';
+}
+else if(compChoice > .66){
+    return 'scissors;'
+}
+
+
+function rPC (compChoice, userChoice){
+
+}
 
 
 
@@ -130,9 +145,6 @@ console.log(cm(1));
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
-for let(i = 99; i = 0; i--){
-    console.log
-}
 
 
 
